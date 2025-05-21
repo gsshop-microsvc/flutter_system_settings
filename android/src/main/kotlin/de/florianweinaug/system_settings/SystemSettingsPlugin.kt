@@ -21,15 +21,15 @@ public class SystemSettingsPlugin: MethodCallHandler,FlutterPlugin {
     channel = methodChannel
   }
 
-//  companion object {
-//    lateinit var mPluginBinding: FlutterPlugin.FlutterPluginBinding
-//    lateinit var channel: MethodChannel
+ companion object {
+    lateinit var mPluginBinding: FlutterPlugin.FlutterPluginBinding
+    lateinit var channel: MethodChannel
 //    @JvmStatic
 //    fun registerWith(registrar: Registrar) {
 //      val channel = MethodChannel(registrar.messenger(), "system_settings")
 //      channel.setMethodCallHandler(SystemSettingsPlugin())
 //    }
-//  }
+  }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     when (call.method) {
